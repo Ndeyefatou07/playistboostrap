@@ -7,13 +7,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <style>  
-    .ad-navbar{background-color: rgba(0, 0, 0, 0.55)}  
+    .ad-navbar{background-color: rgba(0, 0, 0, 0.55);font-family: 'Merriweather', serif; box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);}  
+    .ad-navbar .nav-link{
+        border: 1px solid transparent;
+        transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+    }
+    .ad-navbar .nav-link:hover{
+        padding-bottom: 20px;
+        border-bottom-color:var(--bs-teal) ;
+    }
+    .btn-order{
+        color: var(--bs-teal);
+        border-color:  var(--bs-teal);
+        transition: 0.5s;
+    }
+    .btn-order:hover,.btn-order:active{
+        color: white;
+        background-color: var(--bs-teal);
+    }
     @import url('https://fonts.googleapis.com/css2?family=Redressed&family=Merriweather:wght@300;400;700&display=swap');
     </style>
     <title>Document</title>
 </head>
 <body>
-    <nav class="ad-navbar navbar navbar-expand-lg navbar-light">
+    <nav class="ad-navbar navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand text-uppercase mx-4 py-3" href="#">Chez Andy</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,13 +39,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                <a class="nav-link active pe-4" aria-current="page" href="#">Accueil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Découvrir</a>
+                <a class="nav-link pe-4" href="#">Découvrir</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ">Les classiques</a>
+                <a class="nav-link pe-4">Les classiques</a>
               </li>
               <li class="nav-item">
                 <a class="btn btn-order rounded-0 ">Passer la commande</a>
@@ -38,6 +55,12 @@
           </div>
         </div>
       </nav>
+      <section class="banner pt-5">
+        <div class="container">
+            
+        </div>
+
+      </section>
     <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js">
 </body>
 </html>
